@@ -23,4 +23,24 @@
     <ProjectReference Include="..\src\DevIO.Data\DevIO.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="imagens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="imagens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="imagens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="imagens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\imagens\" />
+  </ItemGroup>
+
 </Project>
