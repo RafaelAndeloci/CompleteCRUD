@@ -54,7 +54,7 @@ namespace DevIO.App.Controllers
 
             produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
             await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
-            
+            //nao sei
             return RedirectToAction("Index");
         }
 
