@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DevIO.App.ViewModels;
 
@@ -34,9 +35,7 @@ public class ProdutoViewModel
     
     [DisplayName("Ativo?")]
     public bool Ativo { get; set; }
-
     /* EF Relation*/
-    public FornecedorViewModel? Fornecedor { get; set; }
-    
+    public FornecedorViewModel Fornecedor { get; set; }
     public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
 }

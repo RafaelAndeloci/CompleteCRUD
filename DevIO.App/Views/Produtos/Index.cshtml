@@ -38,7 +38,7 @@
 @foreach (var item in Model) {
     <tr class="table-light">
         <td>
-            
+            <img src="~/imagens/@item.Imagem" alt="@item.Imagem" style="width: 70px; height: 100px" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Nome)
@@ -54,8 +54,8 @@
         </td>
 
         <td>
-            <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><span class="fa fa-search"></span></a>
-            <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><span class="fa fa-pencil"></span></a>
+            <a class="btn btn-warning" asp-action="Details" asp-route-id="@item.Id"><span class="fa fa-search"></span></a>
+            <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.Id"><span class="fa fa-pencil"></span></a>
             <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><span class="fa fa-trash"></span></a>
         </td>
     </tr>

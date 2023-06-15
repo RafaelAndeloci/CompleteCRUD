@@ -1,9 +1,9 @@
-
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using DevIO.App.ViewModels;
 using DevIO.Business.Interfaces;
 using DevIO.Business.Models;
+
 
 namespace DevIO.App.Controllers
 {
@@ -35,7 +35,8 @@ namespace DevIO.App.Controllers
         // GET: Produtos/Create
         public async Task<IActionResult> Create()
         {
-            var produtoViewModel  = await PopularFornecedores(new ProdutoViewModel());
+            var produtoViewModel = new ProdutoViewModel();
+            await PopularFornecedores(produtoViewModel);
             
             return View(produtoViewModel);
         }
@@ -44,7 +45,8 @@ namespace DevIO.App.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
         {
-            produtoViewModel = await PopularFornecedores(produtoViewModel);
+            await PopularFornecedores(produtoViewModel);
+            
 
             if (!ModelState.IsValid) return View(produtoViewModel);
 
@@ -89,12 +91,10 @@ namespace DevIO.App.Controllers
         {
             var produto = await ObterProduto(id);
 
-            if (produto != null)
-            {
-                await _produtoRepository.Remover(id);
-                return RedirectToAction("Index");
-            }
-            return NotFound();
+            if (produto == null) return NotFound();
+            
+            await _produtoRepository.Remover(id);
+            return RedirectToAction("Index");
         }
 
         private async Task<ProdutoViewModel> ObterProduto(Guid id)
@@ -106,13 +106,13 @@ namespace DevIO.App.Controllers
             return produto;
         }
 
-        private async Task<ProdutoViewModel> PopularFornecedores(ProdutoViewModel produto)
+        private async Task PopularFornecedores(ProdutoViewModel produto)
         {
             produto.Fornecedores =
                 _mapper.Map<IEnumerable<FornecedorViewModel>>(await _fornecedorRepository.ObterTodos());
-
-            return produto;
         }
+
+        
 
         private async Task<bool> UploadArquivo(IFormFile arquivo, string imgPrefixo)
         {
