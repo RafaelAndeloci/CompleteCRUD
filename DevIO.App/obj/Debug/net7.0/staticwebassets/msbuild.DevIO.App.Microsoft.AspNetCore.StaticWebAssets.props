@@ -64,6 +64,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\21142c86-6694-41eb-aba2-a3e386f4a9ef_manga.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\2d007db7-8f17-47f0-8b5c-488be27ac3e6_manga.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>DevIO.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DevIO.App</BasePath>
+      <RelativePath>imagens/2d007db7-8f17-47f0-8b5c-488be27ac3e6_manga.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\2d007db7-8f17-47f0-8b5c-488be27ac3e6_manga.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\32c4dd0b-8842-4a8c-9246-72c4aae7bf11_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif))">
       <SourceType>Package</SourceType>
       <SourceId>DevIO.App</SourceId>
@@ -112,6 +128,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\4bdbeb7f-da50-473f-97fe-7cf7e19b167e_manga.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\8541eb25-a5b9-4396-b5bf-01f1725eafd4_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif))">
+      <SourceType>Package</SourceType>
+      <SourceId>DevIO.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DevIO.App</BasePath>
+      <RelativePath>imagens/8541eb25-a5b9-4396-b5bf-01f1725eafd4_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\8541eb25-a5b9-4396-b5bf-01f1725eafd4_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\94d36640-974b-4269-a812-7a00ca34647b_manga.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>DevIO.App</SourceId>
@@ -159,6 +191,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\ea17d416-3e38-4895-b131-2ba58f4e3156_manga.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\f828261b-7247-4389-942c-bf6c6c9d835f_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif))">
+      <SourceType>Package</SourceType>
+      <SourceId>DevIO.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DevIO.App</BasePath>
+      <RelativePath>imagens/f828261b-7247-4389-942c-bf6c6c9d835f_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\f828261b-7247-4389-942c-bf6c6c9d835f_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>

@@ -1,8 +1,10 @@
+using System.Globalization;
 using DevIO.App.Data;
 using DevIO.Business.Interfaces;
 using DevIO.Data.Context;
 using DevIO.Data.Repository;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +17,11 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDbContext<MeuDbContext>(options =>
-    options.UseSqlServer(connectionString));
+{
+    options.UseSqlServer(connectionString);
+    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+});
+
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
@@ -38,6 +44,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
+    app.UseDeveloperExceptionPage();
 }
 else
 {
@@ -48,10 +55,21 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseCookiePolicy();
 
+app.UseAuthentication();
 app.UseRouting();
 
 app.UseAuthorization();
+
+var defaultCuture = new CultureInfo("pt-BR");
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture(defaultCuture),
+    SupportedCultures = new List<CultureInfo>{ defaultCuture },
+    SupportedUICultures = new List<CultureInfo>{ defaultCuture}
+};
+app.UseRequestLocalization(localizationOptions);
 
 app.MapControllerRoute(
     name: "default",
