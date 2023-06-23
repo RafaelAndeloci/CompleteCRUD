@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using DevIO.App.Extensions;
 
 namespace DevIO.App.ViewModels;
 
@@ -27,7 +28,8 @@ public class ProdutoViewModel
 
     public string? Imagem { get; set; }
     
-    [Required(ErrorMessage = "O campo {0} é obrigatório")]
+    [Moeda]
+    [Required(ErrorMessage = "O campo {0} é obrigatório")] 
     public decimal Valor { get; set; }
     
     [ScaffoldColumn(false)]

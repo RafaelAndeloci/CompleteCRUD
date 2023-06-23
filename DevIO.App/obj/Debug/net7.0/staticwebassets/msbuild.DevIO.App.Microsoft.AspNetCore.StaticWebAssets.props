@@ -96,6 +96,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\32c4dd0b-8842-4a8c-9246-72c4aae7bf11_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\428bd5db-8286-4f27-a099-d69f4c7c5dfb_manguito.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>DevIO.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DevIO.App</BasePath>
+      <RelativePath>imagens/428bd5db-8286-4f27-a099-d69f4c7c5dfb_manguito.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\428bd5db-8286-4f27-a099-d69f4c7c5dfb_manguito.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\imagens\456e3bcb-b57f-4900-b11c-0f079602452b_manga.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>DevIO.App</SourceId>

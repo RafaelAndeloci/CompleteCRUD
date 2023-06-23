@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r7jo+Me35CdZN5Ihm5SwBk44ygnpbMIcQm9SKwKvBTk=",
+  "Hash": "VvhTaSi/6KQbLLOMjU+Lb+FjfTR/SrbARlhcV39P+UM=",
   "Source": "DevIO.App",
   "BasePath": "_content/DevIO.App",
   "Mode": "Default",
@@ -1154,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagens\\32c4dd0b-8842-4a8c-9246-72c4aae7bf11_322bb7_fcbfef8c2d7c46718661af3e18459e92~mv2_d_1200_1234_s_2.gif"
+    },
+    {
+      "Identity": "C:\\Users\\rafael.goncalves\\source\\repos\\AppCompletaMVC-main\\DevIO.App\\wwwroot\\imagens\\428bd5db-8286-4f27-a099-d69f4c7c5dfb_manguito.jpg",
+      "SourceId": "DevIO.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rafael.goncalves\\source\\repos\\AppCompletaMVC-main\\DevIO.App\\wwwroot\\",
+      "BasePath": "_content/DevIO.App",
+      "RelativePath": "imagens/428bd5db-8286-4f27-a099-d69f4c7c5dfb_manguito.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagens\\428bd5db-8286-4f27-a099-d69f4c7c5dfb_manguito.jpg"
     },
     {
       "Identity": "C:\\Users\\rafael.goncalves\\source\\repos\\AppCompletaMVC-main\\DevIO.App\\wwwroot\\imagens\\456e3bcb-b57f-4900-b11c-0f079602452b_manga.jpg",
