@@ -61,12 +61,6 @@
                         @Html.DisplayFor(model => model.Endereco.Estado)
                     </td>
                     <td>
-                        @* <a asp-action="AtualizarEndereco" asp-route-id="@Model.Id" class="btn btn-info" data-modal=""> *@
-                        @*     <span title="Editar" class="fa fa-pencil-alt"></span> *@
-                        @* </a> *@
-                        @* <button onclick="ExibeModal(this, '@Model.Id')" class="btn btn-primary"> *@
-                        @*     <span title="Editar" class="fa fa-pencil-alt"></span> *@
-                        @* </button> *@
                         <button class="btn btn-primary" type="button" data-toggle="ajax-modal" data-target="#editAddress" data-url="@Url.Action("AtualizarEndereco")/@Model.Id">
                             <span class="fa fa-pencil-alt"></span>
                         </button>

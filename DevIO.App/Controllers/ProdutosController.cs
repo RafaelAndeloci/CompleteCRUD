@@ -21,18 +21,20 @@ namespace DevIO.App.Controllers
             _fornecedorRepository = fornecedorRepository;
         }
 
+        [Route("lista-produtos")]
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
         }
         
+        [Route("dados-produto/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
             return produtoViewModel == null ? NotFound() : View(produtoViewModel);
         }
 
-        // GET: Produtos/Create
+        [Route("novo-produto")]
         public async Task<IActionResult> Create()
         {
             var produtoViewModel = new ProdutoViewModel();
@@ -40,7 +42,8 @@ namespace DevIO.App.Controllers
             
             return View(produtoViewModel);
         }
-        
+
+        [Route("novo-produto")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
@@ -56,17 +59,20 @@ namespace DevIO.App.Controllers
 
             produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
             await _produtoRepository.Adicionar(_mapper.Map<Produto>(produtoViewModel));
-            //nao sei
+
             return RedirectToAction("Index");
         }
 
+        
+        [Route("editar-produto/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
 
             return produtoViewModel == null ? NotFound() : View(produtoViewModel);
         }
-
+        
+        [Route("editar-produto/{id:guid}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, ProdutoViewModel produtoViewModel)
@@ -97,6 +103,7 @@ namespace DevIO.App.Controllers
             return RedirectToAction("Index");
         }
 
+        [Route("excluir-produto/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var produto = await ObterProduto(id);
@@ -104,6 +111,7 @@ namespace DevIO.App.Controllers
             return produto == null ? NotFound() : View(produto);
         }
 
+        [Route("excluir-produto/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
@@ -124,15 +132,13 @@ namespace DevIO.App.Controllers
 
             return produto;
         }
-
+        
         private async Task PopularFornecedores(ProdutoViewModel produto)
         {
             produto.Fornecedores =
                 _mapper.Map<IEnumerable<FornecedorViewModel>>(await _fornecedorRepository.ObterTodos());
         }
-
         
-
         private async Task<bool> UploadArquivo(IFormFile arquivo, string imgPrefixo)
         {
             if (arquivo.Length <= 0) return false;
