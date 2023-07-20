@@ -2,9 +2,9 @@
 
 namespace DevIO.App.Extensions;
 
-public class EmailTagHelper : TagHelper
+public abstract class EmailTagHelper : TagHelper
 {
-    public string EmailDomain { get; set; } = "gmail.com";
+    private string EmailDomain { get; set; } = "gmail.com";
 
     public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
     {

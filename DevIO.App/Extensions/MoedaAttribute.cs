@@ -12,7 +12,7 @@ public class MoedaAttribute : ValidationAttribute
     {
         try
         {
-            var moeda = Convert.ToDecimal(value, new CultureInfo("pt-BR"));
+            var unused = Convert.ToDecimal(value, new CultureInfo("pt-BR"));
         }
         catch (Exception)
         {

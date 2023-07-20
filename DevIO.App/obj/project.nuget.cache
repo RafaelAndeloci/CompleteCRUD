@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5PqvMXwYFFTzeXpavmu+XZbMnLtvWWVjrnYmI/6BvmCH1gQSS2VuB4Y3wSa8QSCFDS/IMH4ULKuJx029u2ef2A==",
+  "dgSpecHash": "OoXKY4+TYAwk0zxM/ZMAqm52t/1mfrKcheYlYEX6hgRv2g3bZksDbXoU5iMq1TXcVGuCjV7XN4WgNp5Sa93nEQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rafael.goncalves\\source\\repos\\AppCompletaMVC-main\\DevIO.App\\DevIO.App.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\rafael.goncalves\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\rafael.goncalves\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rafael.goncalves\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\rafael.goncalves\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512",
     "C:\\Users\\rafael.goncalves\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\rafael.goncalves\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "C:\\Users\\rafael.goncalves\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",

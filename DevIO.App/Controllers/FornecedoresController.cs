@@ -94,7 +94,7 @@ namespace DevIO.App.Controllers
             if (fornecedorViewModel == null) return NotFound();
 
             await _fornecedorRepository.Remover(id);
-            
+
             return RedirectToAction("Index");
         }
 
@@ -127,8 +127,6 @@ namespace DevIO.App.Controllers
             if (!ModelState.IsValid) return PartialView("_AtualizarEndereco", fornecedorViewModel);
 
             await _enderecoRepository.Atualizar(_mapper.Map<Endereco>(fornecedorViewModel.Endereco));
-
-            var url = Url.Action("ObterEndereco", "Fornecedores", new { id = fornecedorViewModel.Endereco.FornecedorId });
 
             return RedirectToAction("Edit", fornecedorViewModel);
         }

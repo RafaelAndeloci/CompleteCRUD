@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RnHxGgJ/JyLwjBPV+V2qj7bKQTksaJ5oHDJGnB2u0DsYGhouCK3hW5ckyLp52y4EM2QZR5wKLBH7B9Ma3ilqYg==",
+  "dgSpecHash": "vlwUF0AJGKfz3/AA29XtkvzRa/Bg3rYc3YCgjaWqe59sN95SAK02t+UYCeAiZcDwXnxmxUB1PVvD17cup4qnug==",
   "success": true,
   "projectFilePath": "C:\\Users\\rafael.goncalves\\source\\repos\\AppCompletaMVC-main\\src\\DevIO.Business\\DevIO.Business.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rafael.goncalves\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512"
+  ],
   "logs": []
 }
