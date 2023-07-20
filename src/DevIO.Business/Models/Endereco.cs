@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace DevIO.Business.Models
+﻿namespace DevIO.Business.Models
 {
     public class Endereco : Entity
     {

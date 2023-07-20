@@ -36,3 +36,10 @@
     <input asp-for="Endereco.Estado" class="form-control"/>
     <span asp-validation-for="Endereco.Estado" class="text-danger"></span>
 </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        BuscaCep();
+    </script>
+}

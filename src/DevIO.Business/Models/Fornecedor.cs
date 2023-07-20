@@ -1,7 +1,4 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-
-namespace DevIO.Business.Models
+﻿namespace DevIO.Business.Models
 {
     public class Fornecedor : Entity
     {
